@@ -1,0 +1,7 @@
+/* importing other CSS file */
+@import url('./color.css');
+@import url('./font.css');
+
+p { background: #c79bac }
+
+ul { list-style: circle }
