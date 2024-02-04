@@ -17,14 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Babbybedding import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about-us/', views.aboutUs),
-    path('', views.homepage),
+    path('about-us/', views.aboutUs,name='aboutus'),
+    path('', views.homepage,name='home'),
     path('products/', views.product),
     path('products/<int:productid>', views.productDetails),
-    path('contact/', views.contact),
+    path('contact/', views.contact,name='contact'),
     path('userform/', views.userForm),
 
 ]
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

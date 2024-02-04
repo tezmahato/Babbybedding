@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 from .forms import userform
-from product.models import Product
+
 
 
 
@@ -20,13 +20,6 @@ def homepage(request):
     }
     return render(request,"index.html",data) 
 
-def product(request):
-
-    product_data=Product.objects.all()
-    data={
-        'product_data':product_data
-    }
-    return render( request,"product.html",data)
 
 def contact(request):
     form=userform()
