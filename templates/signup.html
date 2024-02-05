@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content%}
+
+    
+
+
+        
+<body>
+
+    <form action=""  method="post"  style="max-width:500px;margin:auto" >
+                {% csrf_token %} 
+              <h2 style="text-align: center;">SignUp Form</h2>
+              <br>
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="username">
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email" name="email">
+              </div>
+              
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="password1">
+              </div>
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="password2">
+              </div>
+            
+              <button type="submit" class="btn">SignUp</button>
+    </form>
+    <br>
+    <br>
+    <br>
+           <br> 
+</body>
+
+{% endblock %}

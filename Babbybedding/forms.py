@@ -2,5 +2,8 @@ from django import forms
 
 
 class userform(forms.Form):
-    num1=forms.CharField()
-    num2=forms.CharField()
+    Username=forms.CharField(label="Username")
+    Email=forms.EmailField(label="Email")
+    Password=forms.CharField(label="Password")
+    ConfirmPassword= forms.CharField(label="Password")
+    
