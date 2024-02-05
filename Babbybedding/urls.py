@@ -28,7 +28,9 @@ urlpatterns = [
     path('products/', views.product),
     path('products/<int:productid>', views.productDetails),
     path('contact/', views.contact,name='contact'),
-    path('userform/', views.userForm),
+   
+    path('signup/', views.signup,name='signup'),
+
 
 ]
 if settings.DEBUG:
