@@ -7,10 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  </body>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
     .product-list-container {
@@ -20,30 +19,31 @@
     }
 
     .product-card {
-      width: 30%;
-      max-height: 450px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
+      width: 300px;
+      height: a;
+      margin-bottom: 2rem;
+      border: .1rem solid #ccc;
+      border-radius: .5rem;
+      padding: 1rem;
       box-sizing: border-box;
+      text-align: center;
     }
 
     .product-card img {
       width: 100%;
       height: 70%;
-      border-radius: 5px;
-      margin-bottom: 10px;
+      border: radius 0.5rem;;
+      margin-bottom: 1rem;
     }
-    
+
 
     .product-title {
-      font-size: 20px;
+      font-size: 2rem;
       margin: 0;
     }
 
     .product-description {
-      margin: 10px 0;
+      margin: 1rem 0;
       overflow: visible;
       overflow-wrap: break-word;
     }
@@ -59,30 +59,30 @@
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
       }
 
       .icon {
-      padding: 10px;
+      padding: 1rem;
       background: dodgerblue;
       color: white;
-      min-width: 50px;
+      min-width: 5rem;
       text-align: center;
       }
       .input-field {
         width: 100%;
-        padding: 10px;
+        padding: 1rem;
         outline: none;
       }
 
     .input-field:focus {
-      border: 2px solid dodgerblue;
+      border: .2rem solid dodgerblue;
     }
 
     .btn {
         background-color: dodgerblue;
         color: white;
-        padding: 15px 20px;
+        padding: 1.5rem 2rem;
         border: none;
         cursor: pointer;
         width: 100%;
@@ -92,136 +92,92 @@
 .btn:hover {
   opacity: 1;
 }
-  
+
+
+
+
     
-    
-    
-    /* CSS for header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f5f5f5;
-    }
-
-    .header .logo {
-      font-size: 25px;
-      font-family: 'Sriracha', cursive;
-      color: #000;
-      text-decoration: none;
-      margin-left: 30px;
-    }
-
-    .nav-items {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f5f5f5;
-      margin-right: 20px;
-    }
-
-    .nav-items a {
-      text-decoration: none;
-      color: #000;
-      padding: 35px 20px;
-    }
-
     /* CSS for main element */
-    .intro {
+    
+
+
+    @media only screen and (max-width: 600px) {
+      .bottom-links .links span {
+      font-size: 1.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+    .about-me-text p {
+      font-size: 1.5rem;
+      color: #585858;
+      margin: 1rem 0;
+    }
+    .about-me-text h2 {
+      font-size: 2rem;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .bottom-links .links {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 520px;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/static/images/cute-baby-home-bed_624325-1748.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      padding: 0 3rem;
     }
-
-    .intro h1 {
-      font-family: sans-serif;
-      font-size: 60px;
-      color: #fff;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 0;
+    .achievements .work .work-text {
+      font-size: 1rem;
+      color: #585858;
+      margin: 1rem 0;
     }
-
-    .intro p {
-      font-size: 20px;
-      color: #d1d1d1;
-      text-transform: uppercase;
-      margin: 20px 0;
-    }
-
-    .intro button {
-      background-color: #5edaf0;
-      color: #000;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-    }
-
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 80px;
-    }
-
     .achievements .work {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 40px;
+      padding: 0 2rem;
     }
 
     .achievements .work i {
       width: fit-content;
-      font-size: 50px;
+      font-size: 3rem;
       color: #333333;
       border-radius: 50%;
       border: 2px solid #333333;
-      padding: 12px;
+      padding: 1rem;
     }
 
     .achievements .work .work-heading {
-      font-size: 20px;
+      font-size: 1rem;
       color: #333333;
       text-transform: uppercase;
-      margin: 10px 0;
+      margin: 1rem 0;
     }
 
     .achievements .work .work-text {
-      font-size: 15px;
+      font-size: 1.5rem;
       color: #585858;
-      margin: 10px 0;
+      margin: 1rem 0;
     }
 
     .about-me {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px 80px;
-      border-top: 2px solid #eeeeee;
+      padding: 1% 4%;
+      border-top: .2rem solid #eeeeee;
     }
 
     .about-me img {
-      width: 500px;
+      width: 200px;
       max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
 
     .about-me-text h2 {
-      font-size: 30px;
+      font-size: 3rem;
       color: #333333;
       text-transform: uppercase;
       margin: 0;
@@ -232,57 +188,33 @@
       color: #585858;
       margin: 10px 0;
     }
-
-    /* CSS for footer */
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #302f49;
-      padding: 10px 80px;
-    }
-
-    .footer .copy {
-      color: #fff;
-    }
-
-    .bottom-links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 20px 0;
-    }
-
-    .bottom-links .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .bottom-links .links span {
-      font-size: 20px;
-      color: #fff;
+    .about-me-text h2 {
+      font-size: 1rem;
+      color: #333333;
       text-transform: uppercase;
-      margin: 10px 0;
-    }
+      margin: 0;
+    }.achievements .work .work-text {
+      font-size: .5rem;
+      color: #585858;
+      margin: 1rem 0;
 
-    .bottom-links .links a {
-      text-decoration: none;
-      color: #a1a1a1;
-      padding: 10px 20px;
+  }
+  .achievements .work .work-heading {
+      font-size: 1rem;
+   
+      margin: 1rem 0;
     }
   </style>
 </head>
-
 <body>
-  <header class="header">
-    <a href="#" class="logo">Babybedding</a>
-    <nav class="nav-items">
-      <a href="{% url 'home' %}">Home</a>
-      <a href="{% url 'aboutus' %}">About</a>
-      <a href="{% url 'contact' %}">Contact</a>
-      <a href="{% url 'signup' %}">SignUp</a>
-    </nav>
-  </header>
+  <div class="main">
+      <div class="navbar-brand" href="#">BabyBedsNepal</div>
+      <div class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'aboutus' %}">About</a>
+          <a class="nav-link " href="{% url 'contact' %}">Contact</a>
+          <a class="nav-link " href="{% url 'signup' %}">SignUp</a>
+      </div>
+    </div>
+  
+</body>

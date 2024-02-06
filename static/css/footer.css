@@ -1,0 +1,40 @@
+
+    /* CSS for footer */
+    .container{
+        display: flex;
+        height: ;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        background-color:#302f49 ;
+      }
+      
+        
+      }
+  
+      .container .copy {
+        color: #fff;
+        align-items: center;
+      }
+  
+      .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 0;
+      }
+  
+      .bottom-links .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 4rem;
+      }
+  
+      .bottom-links .links span {
+        font-size: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 1rem 0;
+      }

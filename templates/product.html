@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<link rel="stylesheet" href="/static/css/product.css">
 <h1> this is product page</h1>
 
 <div>
     <div class="product-list-container">
         {% for n in product_data %}
         <div class="product-card">
-          <img src="/media/{{n.product_image}}"|resize:"200*150",C alt="Product Name">
+          <img srcset="/media/{{n.product_image}} 400w, /media/{{n.product_image}} 800w" src="/media/{{n.product_image}}" alt="Product Name" sizes="(max-width: 600px) 400px, 80vw" width="400" height="300">
+          
           <h3 class="product-title" >{{n.product_title}}</h3>
           <p class="product-description">{{n.product_description}}</p>
           <p class="product-price">$10.00</p>
@@ -18,3 +19,4 @@
 
 </div>
 {% endblock %}
+
